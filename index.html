@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify - Online Ecommerce Website</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/8d0e03591a.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top py-2">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="color: yellow;"><i class="fas fa-shop"></i>Shopify</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#categories">Categories</a>
+                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#testimonials">Testimonials</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacts">Contacts</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" id="find" type="search" placeholder="Search here..." aria-label="Search" onkeyup="searchproducts()">
+                  <button type="button" class="btn btn-success">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/image1.png"  alt="..." class="d-block w-100" height="550px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/image2.png" alt="..." class="d-block w-100" height="550px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/image3.png" alt="..." class="d-block w-100" height="550px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <section class="container-fluid" id="about">
+      <div class="row">
+        <div class="card-header mt-5" style="text-align: center; color: gray;">
+          <h1>About Us</h1>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3 box shadow bg-white mt-3 p-2">
+            <i class="fas fa-cart-shopping mt-4" style="font-size: 30px; color: blue; text-align: center;"></i>
+            <div class="card-body">
+              <div class="card-title" style="text-align: center;">
+                <h3>Free Shipping</h3>
+              </div>
+              <div class="card-text" style="text-align: center;">
+              <p>On order over <i class="fas fa-indian-rupee"></i>500</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3 box shadow bg-white mt-3 p-2">
+            <i class="fas fa-truck-fast mt-4" style="font-size: 30px; color: blue; text-align: center;"></i>
+            <div class="card-body">
+              <div class="card-title" style="text-align: center;">
+                <h3>Free Delivery</h3>
+              </div>
+              <div class="card-text" style="text-align: center;">
+              <p>World Wide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3 box shadow bg-white mt-3 p-2">
+            <i class="fas fa-thumbs-up mt-4" style="font-size: 30px; color: blue; text-align: center;"></i>
+            <div class="card-body">
+              <div class="card-title" style="text-align: center;">
+                <h3>Best Choice</h3>
+              </div>
+              <div class="card-text" style="text-align: center;">
+              <p>Of product</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card mb-3 box shadow bg-white mt-3 p-2">
+            <i class="fas fa-handshake-angle mt-4" style="font-size: 30px; color: blue; text-align: center;"></i>
+            <div class="card-body">
+              <div class="card-title" style="text-align: center;">
+                <h3>Customer Suppport</h3>
+              </div>
+              <div class="card-text" style="text-align: center;">
+              <p>24 hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="images/banner.png" alt="" class="img-fluid rounded" width="100%">
+        </div>
+      </div>
+    </section>
+   <section class="container-fluid" id="categories">
+    <div class="row">
+      <div class="card-header mt-5" style="text-align: center; color: gray;">
+        <h1>Top Offers</h1>
+      </div>
+      <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/top offers image1.png" class="img-fluid" style="height: 180px;"></span>
+        <div class="card-body">
+            <div class="card-title">
+              <h6>PHILIPS GC1903 1440 W Steam Iron</h6>
+            </div>
+            <div class="card-text">
+              <p>From <span><i class="fas fa-indian-rupee-sign"></i></span>599</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/top offers image2.png" alt="" class="img-fluid" style="height: 180px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>LG 80cm (32inch) Smart Web OS TV</h6>
+            </div>
+            <div class="card-text">
+              <p>From <span><i class="fas fa-indian-rupee-sign"></i></span>13,490</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/top offers image3.png" alt="" class="img-fluid" style="height: 179px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Men Navy, Blue Clogs Sandal</h6>
+            </div>
+            <div class="card-text">
+              <p>From <span><i class="fas fa-indian-rupee-sign"></i></span>349</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/top offers image4.png" alt="" class="img-fluid" style="height: 178px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Godrej 5 Star Washing Machine</h6>
+            </div>
+            <div class="card-text">
+              <p>From <span><i class="fas fa-indian-rupee-sign"></i></span>14,999</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/top offers image5.png" alt="" class="img-fluid" style="height: 176px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>23L Convection Microwave Oven </h6>
+            </div>
+            <div class="card-text">
+              <p>From <span><i class="fas fa-indian-rupee-sign"></i></span>9,499</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/top offers image6.png" alt="" class="img-fluid" style="height: 193px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Induction Cooktops</h6>
+            </div>
+            <div class="card-text">
+              <p>From <span><i class="fas fa-indian-rupee-sign"></i></span>3,199</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-header mt-5" style="text-align: center; color: gray;">
+        <h1>Smartphones</h1>
+      </div>
+      <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/mobile image1.png" class="img-fluid" style="height: 198px;"></span>
+        <div class="card-body">
+            <div class="card-title">
+              <h6>Infinix Note 12 5G (Force Black, 64GB)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>13,999</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/mobile image2.png" alt="" class="img-fluid" style="height: 198px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>POCO M3 Pro 5G (Power Black, 64GB)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>8,999</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/mobile image6.png" alt="" class="img-fluid" style="height: 197px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Vivo T1X (Space Blue, 64GB)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>11,999</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/mobile image3.png" alt="" class="img-fluid" style="height: 196px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Apple iPhone 12 (White, 128GB)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>40,999</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/mobile image5.png" alt="" class="img-fluid" style="height: 175px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Samsung Galaxy M32 5G (Slate Black, 128GB)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>21,989</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/mobile image4.png" alt="" class="img-fluid" style="height: 193px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Redmi 10 (Midnight Black, 64GB)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>9,499</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-header mt-5" style="text-align: center; color: gray;">
+        <h1>Electronics</h1>
+      </div>
+      <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/electronic image1.png" class="img-fluid" style="height: 198px;"></span>
+        <div class="card-body">
+            <div class="card-title">
+              <h6>DELL Laptop Core i3 11th Gen -(8GB/1TB HDD/ 256GB SSD)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>38,990</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/electronic image2.png" alt="" class="img-fluid" style="height: 216px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>boAt Wave Neo Smartwatch</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>1,799</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/electronic image3.png" alt="" class="img-fluid" style="height: 215px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>realme Buds Air 3 Neo (Blue)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>999</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/electronic image4.png" alt="" class="img-fluid" style="height: 176px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>acer 21.5 Inch Full HD IPS Panel White Colour Ultra Slim Monitor</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>8,349</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/electronic image5.png" alt="" class="img-fluid" style="height: 175px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>PHILIPS BT3241/15 Trimmer 19 min Runtime 20 Length Settings (Black)</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>1,799</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <span><img src="images/electronic image6.png" alt="" class="img-fluid" style="height: 173px;"></span>
+          <div class="card-body">
+            <div class="card-title">
+              <h6>Lenovo M10 FHD Plus (2nd Gen) with Active Pen 4GB RAM 123GB ROM</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>20,999</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-header mt-5" style="text-align: center; color: gray;">
+        <h1>Fashion</h1>
+      </div>
+      <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/fashion image1.png" class="img-fluid" style="height: 214px;"></span>
+        <div class="card-body">
+            <div class="card-title">
+              <h6>Woodland Men Brown Flats Sandal</h6>
+            </div>
+            <div class="card-text">
+              <p><span><i class="fas fa-indian-rupee-sign"></i></span>1,097</p>
+              <a href="" class="btn btn-warning w-100">Add To Cart</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/fashion image2.png" class="img-fluid" style="height: 195px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Parx Men Full Sleeve Solid Hooded Sweatshirt</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>759</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/fashion image3.png" class="img-fluid" style="height: 213px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Metronaut Men Slim Mid Rise Blue Jeans</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>664</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/fashion image4.png" class="img-fluid" style="height: 194px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Women Floral Print Rayon Straight Kurta (Green)</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>599</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/fashion image5.png" class="img-fluid" style="height: 193px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Campus Cluster Pro Running Shoes for Men (Blue)</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>659</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/fashion image6.png" class="img-fluid" style="height: 210px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Boys Typography Pure Cotton T Shirt</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>169</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="card-header mt-5" style="text-align: center; color: gray;">
+      <h1>Home & Furniture</h1>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/home image1.png" class="img-fluid" style="height: 199px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Cotton Double King Sized Bedding Set (White)</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>299</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/home image2.png" class="img-fluid" style="height: 199px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Polyster Room Darkening Window Curtain</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>299</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/home image3.png" class="img-fluid" style="height: 216px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Fresh Zone Polyster Door Mat</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>249</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/home image4.png" class="img-fluid" style="height: 215px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Helium Cotton Bath Linen Set</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>2699</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/home image5.png" class="img-fluid" style="height: 196px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Brass nozzle spray 10 L Backpack Sprayer</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>395</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/home image6.png" class="img-fluid" style="height: 176px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Rechargeable Torch Flash Light with Back Light Torch (Black, 10cm)</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>485</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="card-header mt-5" style="text-align: center; color: gray;">
+      <h1>Sports & Fitness Equipments</h1>
+    </div>
+    <div class="col-lg-2">
+    <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+      <span><img src="images/sports image1.png" class="img-fluid" style="height: 191px;"></span>
+      <div class="card-body">
+          <div class="card-title">
+            <h6>Jaspo Brillient Intact Senior Skates Combo</h6>
+          </div>
+          <div class="card-text">
+            <p style="text-align: center;"><span><i class="fas fa-indian-rupee-sign"></i></span>999</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/sports image2.png" alt="" class="img-fluid" style="height: 210px;"></span>
+        <div class="card-body">
+          <div class="card-title">
+            <h6>LIVOX Fitnees Equipment Kit</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>799</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/sports image3.png" alt="" class="img-fluid" style="height: 210px;"></span>
+        <div class="card-body">
+          <div class="card-title">
+            <h6>Urban Terrain Mountain Cycle</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>11,490</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/sports image4.png" alt="" class="img-fluid" style="height: 171px;"></span>
+        <div class="card-body">
+          <div class="card-title">
+            <h6>SMT 32 Inch Wood Round Pocket Carrom Board 81.28cm (Brown)</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>1,299</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/sports image5.png" alt="" class="img-fluid" style="height: 170px;"></span>
+        <div class="card-body">
+          <div class="card-title">
+            <h6>AVG MRF Genius GRAND EDITION Poplar Willow Cricket Bat (.700kg)</h6>
+          </div>
+          <div class="card-text">
+            <p style="text-align: center;"><span><i class="fas fa-indian-rupee-sign"></i></span>369</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+        <span><img src="images/sports image6.png" alt="" class="img-fluid" style="height: 208px;"></span>
+        <div class="card-body">
+          <div class="card-title">
+            <h6>COSCO Milano Football - Size: 5</h6>
+          </div>
+          <div class="card-text">
+            <p><span><i class="fas fa-indian-rupee-sign"></i></span>914</p>
+            <a href="" class="btn btn-warning w-100">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </section>
+   <section class="container-fluid" id="testimonials">
+      <div class="row">
+        <div class="card-header mt-5" style="text-align: center; color: gray;">
+          <h1>Testimonials</h1>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+            <img src="images/img1.png" class="img-fluid rounded" style="height: 200px;">
+            <div class="card-body">
+                <div class="card-text" style="text-align: center;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti temporibus saepe assumenda perferendis cupiditate nesciunt accusamus autem commodi eum ab, ipsum alias aperiam. Natus voluptas assumenda eum cum nostrum.</p>
+                </div>
+                <div class="card-title" style="text-align: center;">
+                  <h4>Mr. John Smith</h4>
+                  </div>
+                <div class="stars" style="text-align: center; color: yellow;">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      <div class="col-lg-4">
+        <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+          <img src="images/img2.png" class="img-fluid rounded" style="height: 200px;">
+          <div class="card-body">
+              <div class="card-text" style="text-align: center;">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti temporibus saepe assumenda perferendis cupiditate nesciunt accusamus autem commodi eum ab, ipsum alias aperiam. Natus voluptas assumenda eum cum nostrum.</p>
+              </div>
+              <div class="card-title" style="text-align: center;">
+              <h4>Dr. Sara Williams</h4>
+              </div>
+              <div class="stars" style="text-align: center; color: yellow;">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              </div>
+              </div>
+          </div>
+        <div class="col-lg-4">
+          <div class="card mb-3 box shadow bg-white mt-3 p-2" style="text-align: center;">
+            <img src="images/img3.png" class="img-fluid rounded" style="height: 200px;">
+            <div class="card-body">
+                <div class="card-text" style="text-align: center;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti temporibus saepe assumenda perferendis cupiditate nesciunt accusamus autem commodi eum ab, ipsum alias aperiam. Natus voluptas assumenda eum cum nostrum.</p>
+                </div>
+                <div class="card-title" style="text-align: center;">
+                <h4>Mr. Jonas Dickens</h4>
+                </div>
+                <div class="stars" style="text-align: center; color: yellow;">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+                  <i class="fas fa-star-half"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+   <section class="container-fluid" id="contacts">
+    <div class="row">
+      <div class="card-header mt-5" style="text-align: center; color: gray;">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="col-lg-12">
+      <div class="card box shadow bg-white mt-3 p-4">
+      <form method="post">
+        <div class="form-group mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="tname" placeholder="Enter name" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="tmail" placeholder="Enter email" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="mobile" class="form-label">Mobile Number</label>
+          <input type="number" class="form-control" name="tmob" placeholder="Enter mobile number" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="address" class="form-label">Address</label>
+          <textarea name="tadd" class="form-control" cols="149" rows="10" placeholder="Enter address..."></textarea>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+        </div>
+      </div>
+   </section>
+   <footer class="bg-dark text-white pt-2 pb-3">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About us</h5>
+                <p>
+                  <a href="#" class="text-white" style="text-decoration: none;">Contact Us</a>
+              </p>
+              <p>
+                  <a href="#" class="text-white" style="text-decoration: none;">About Us</a>
+              </p>
+              <p>
+                  <a href="#" class="text-white" style="text-decoration: none;">Careers</a>
+              </p>
+              <p>
+                  <a href="#" class="text-white" style="text-decoration: none;">Shopify Stories</a>
+              </p>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none;">Press</a>
+            </p>
+            <p>
+                <a href="#" class="text-white" style="text-decoration: none;">Shopify Wholesale</a>
+            </p>
+            <p>
+                <a href="#" class="text-white" style="text-decoration: none;">Corporate Information</a>
+            </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Help</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Payments</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Shipping</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Cancellation & Returns</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">FAQ</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white" style="text-decoration: none;">Report-Infringement</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Policy</h5>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Return Policy</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Terms of Use</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Security</a>
+                </p>
+                <p>
+                    <a href="#" class="text-white" style="text-decoration: none;">Privacy</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white" style="text-decoration: none;">Sitemap</a>
+              </p>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none;">EPR Compliance</a>
+            </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Help</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Facebook</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Twitter</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">You Tube</a>
+            </p>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="align-items-center mb-2">
+                <p>Copyright @2022 All rights reserved by:</p>
+                <a href="#" style="text-decoration: none;"><strong class="text-warning">TheShopify</strong></a>
+            </div>
+            <div class="align-items-center">
+               <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floting btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floting btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floting btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floting btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floting btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    <div class="image">
+                      <img src="images/payment-method_69e7ec (1).svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
